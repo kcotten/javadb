@@ -1,3 +1,3 @@
 Javadb Repo
 ---
-Example of spring persistence layer
+Example of dockerized spring persistence layer with Mongo db
