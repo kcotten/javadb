@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo
+  data:
+    mongodb:
+      host: ${SPRING_DATA_MONGODB_HOST}
+      port: ${SPRING_DATA_MONGODB_PORT}
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - test
+  application:
+    name: demo
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017

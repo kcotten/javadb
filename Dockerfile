@@ -4,7 +4,7 @@ COPY src /home/app/src
 COPY pom.xml /home/app
 ENV SPRING_DATA_MONGODB_PORT=27017
 ENV SPRING_DATA_MONGODB_HOST=172.17.0.2
-RUN mvn -f /home/app/pom.xml clean package
+RUN mvn -f /home/app/pom.xml clean package -DskipTests
 
 # Package stage
 FROM openjdk:11-jre-slim
